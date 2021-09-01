@@ -48,14 +48,14 @@ int main () {
 #if 0  
   // Use an explicit iterator to count the number of times each word
   // appears in the word_list.
-  for (WORD_MAP::iterator word_iter = word_list.cbegin ();
+  for (/*WORD_MAP::iterator*/std::vector<std::string>::const_iterator word_iter = word_list.cbegin ();
        word_iter != word_list.cend ();
        ++word_iter)
     ++word_map[*word_iter];
 
   // Use an auto iterator to count the number of times each word
   // appears in the word_list.
-  for (auto const &word_iter = word_list.begin ();
+  for (/*auto const &*/ std::vector<std::string>::iterator word_iter = word_list.begin ();
        word_iter != word_list.end ();
        ++word_iter)
     ++word_map[*word_iter];
