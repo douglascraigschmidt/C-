@@ -63,7 +63,7 @@ int main() {
     a_list_stack_of_ints.push(42);
     int i = a_list_stack_of_ints.top();
     cout << i << endl;
-    a_deque_stack_of_strings.pop();
+    a_list_stack_of_ints.pop();
 
     return 0;
 }
